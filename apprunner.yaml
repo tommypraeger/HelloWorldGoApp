@@ -3,6 +3,7 @@ runtime: go1
 build:
   commands:
     build:
+      - echo $CODEBUILD_BUILD_IMAGE
       - go build main.go
 run:
   runtime-version: 1.19.1
